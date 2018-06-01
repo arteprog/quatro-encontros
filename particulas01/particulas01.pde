@@ -14,7 +14,7 @@ void setup() {
 }
 
 void draw() {
-  background(200);
+  background(100);
   for (Bola bola : bolas) {
     bola.desenhar();  
     bola.mover();
@@ -40,7 +40,8 @@ class Bola {
     x = px;
     y = py;
     tamanho = random(tam_min, tam_max);
-    cor = color(random(255), random(255), random(255), 128);
+    colorMode(HSB);
+    cor = color(random(100, 200), 255, 255);
     vx = random(-2, 2);
     vy = random(-2, 2);
   }

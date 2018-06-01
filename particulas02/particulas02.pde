@@ -1,6 +1,6 @@
 /* Exemplo de um sistema de partículas com lista dinâmica 'ArrayList' 
- * A classe grupoDeBolas contém uma lista de bolinhas da classe Bola
- * A festa é ArrayList de grupoDeBolas (uma lista de grupos de bolinhas)
+ * Os objetos da classe grupoDeBolas contém uma lista de bolinhas da classe Bola
+ * A festa é um ArrayList de grupoDeBolas (uma lista de grupos de bolinhas)
  */
 
 ArrayList<grupoDeBolas> festa; 
@@ -12,7 +12,7 @@ void setup() {
 }
 
 void draw() {
-  background(200);
+  background(100);
   for (grupoDeBolas grupo : festa) {  // para cada lista da festa
     grupo.update();
   }
@@ -36,7 +36,8 @@ class Bola {
     x = px;
     y = py;
     tamanho = random(tam_min, tam_max);
-    cor = color(random(255), random(255), random(255), 128);
+    colorMode(HSB);
+    cor = color(random(100, 200), 255, 255);
     vx = random(-2, 2);
     vy = random(-2, 2);
   }
@@ -73,7 +74,7 @@ class grupoDeBolas {
       bola.desenhar();  
       bola.mover();
     }
-
+    // remove bolas que sairam para baixo do canvas
     for (int i = bolas.size()-1; i >= 0; i--) { 
       Bola bola = bolas.get(i);
       if (bola.y > height) {
