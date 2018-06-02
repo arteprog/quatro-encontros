@@ -55,8 +55,9 @@ def generate():
             neighbors = 0
             for i in range(-1, 2):
                 for j in range(-1, 2):
-                    neighbors += BOARD[(x + i + COLS) %
-                                       COLS][(y + j + ROWS) % ROWS]
+                    nx = (x + i + COLS) % COLS
+                    ny = (y + j + ROWS) % ROWS
+                    neighbors += BOARD[nx][ny]
             # A little trick to subtract the current cell's state since
             # we added it in the above loop
             neighbors -= BOARD[x][y]
