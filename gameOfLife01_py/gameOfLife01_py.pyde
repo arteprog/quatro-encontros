@@ -1,6 +1,5 @@
 """
-Adaptado de
-The Nature of Code, Daniel Shiffman http://natureofcode.com
+Adaptado de The Nature of Code, Daniel Shiffman http://natureofcode.com
 """
 
 PLAY = True
@@ -14,10 +13,11 @@ def setup():
     ROWS = height / CELL_SIZE
     # Game of life BOARD
     BOARD = [[0] * ROWS for _ in range(COLS)]
-    # Call function to fill array with random values 0 or 1
+    # Call function to fill board with random values 0 or 1
     init()
 
 def draw():
+    """ display the board, and if PLAY is true, call generate() """
     background(255)
     for i in range(COLS):
         for j in range(ROWS):
@@ -40,12 +40,13 @@ def keyPressed():
         init()
 
 def init():
+    """ fill board with random values 0 or 1 """
     for i in range(COLS):
         for j in range(ROWS):
             BOARD[i][j] = int(random(2))
 
-# The process of creating the new generation
 def generate():
+    """ The process of creating the new generation """
     global BOARD
     next = [[0] * ROWS for _ in range(COLS)]
     # Loop through every spot in our 2D array and check spots neighbors
