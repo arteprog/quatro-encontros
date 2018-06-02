@@ -35,7 +35,8 @@ void draw() {
 }
 
 
-// reset board when mouse is pressed
+// Reset board when 'r' is pressed
+// Pause/Play when SPACE BAR is pressed
 void keyPressed() {
   if (key == ' ') {
     play = !play;
@@ -79,7 +80,7 @@ void generate() {
       if      ((board[x][y] == 1) && (neighbors <  2)) next[x][y] = 0;           // Loneliness
       else if ((board[x][y] == 1) && (neighbors >  3)) next[x][y] = 0;           // Overpopulation
       else if ((board[x][y] == 0) && (neighbors == 3)) next[x][y] = 1;           // Reproduction
-      else                                            next[x][y] = board[x][y];  // Stasis
+      else                                             next[x][y] = board[x][y]; // Stasis
     }
   }
 
