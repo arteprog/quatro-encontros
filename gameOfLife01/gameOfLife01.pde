@@ -2,16 +2,16 @@
 // The Nature of Code, Daniel Shiffman http://natureofcode.com
 
 boolean play = true;
-int w = 8;
+int cellSize = 8;
 int columns, rows;
 // Game of life board
 int[][] board;
 
 void setup() {
-  size(400, 400);
+  size(600, 400);
   // Initialize rows, columns and set-up arrays
-  columns = width/w;
-  rows = height/w;
+  columns = width/cellSize;
+  rows = height/cellSize;
   board = new int[columns][rows];
   // Call function to fill array with random values 0 or 1
   init();
@@ -24,8 +24,8 @@ void draw() {
     for ( int j = 0; j < rows; j++) {
       if ((board[i][j] == 1)) fill(0);
       else fill(255); 
-      stroke(0);
-      rect(i*w, j*w, w, w);
+      noStroke(); //stroke(0);
+      rect(i*cellSize, j*cellSize, cellSize, cellSize);
     }
   }
 
