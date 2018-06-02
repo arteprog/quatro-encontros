@@ -4,7 +4,7 @@ The Nature of Code, Daniel Shiffman http://natureofcode.com
 """
 
 PLAY = True
-CELL_SIZE = 3
+CELL_SIZE = 5
 
 def setup():
     global COLS, ROWS, BOARD

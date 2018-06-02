@@ -2,7 +2,7 @@
 // The Nature of Code, Daniel Shiffman http://natureofcode.com
 
 boolean play = true;
-int cellSize = 3;
+int cellSize = 5;
 int columns, rows;
 // Game of life board
 int[][] board;
