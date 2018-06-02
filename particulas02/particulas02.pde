@@ -3,12 +3,12 @@
  * A festa é um ArrayList de grupoDeBolas (uma lista de grupos de bolinhas)
  */
 
-ArrayList<grupoDeBolas> festa; 
+ArrayList<grupoDeBolas> festa; // festa é uma lista de grupos de bolas
 
 void setup() {
   size(600, 400);
   noStroke();
-  festa = new ArrayList<grupoDeBolas>(); // festa é uma lista de grupos de bolas
+  festa = new ArrayList<grupoDeBolas>(); // inicializa a festa
 }
 
 void draw() {
