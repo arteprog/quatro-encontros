@@ -10,5 +10,5 @@ for (int x = 0; x < width; x++) {
   // desenha uma linha do meio da tela até um número sorteado entre Altura/2 e Altura
   // números sorteados pela função noise
   line(x, height/2, x, height/2 + amplitude * noise(x * incremento));
-  // incrementa o tempo a cada frame
+  // a cada volta do laço o x aumenta em 1
 }
