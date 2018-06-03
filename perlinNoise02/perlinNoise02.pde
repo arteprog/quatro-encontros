@@ -1,6 +1,6 @@
 float tempo = 0; // declarando a variável global tempo e inicializando com 0
 float incremento = .01; // escala de incremento do tempo
-float amplitude = 250;  // tamanho máximo possível da linha
+float amplitude = 250;  // amplitude da linha
 
 void setup() {
   size(500, 500); // define o tamanho da tela em pixels. Largura X Altura
