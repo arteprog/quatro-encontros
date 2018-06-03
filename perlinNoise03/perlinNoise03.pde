@@ -1,7 +1,7 @@
 /*
-Exemplo de Perlin Noise em duas dimensões 
-Comparado com um random simples
-*/
+ Exemplo de Perlin Noise em duas dimensões 
+ Comparado com um random simples
+ */
 
 float perlinScale = 0.2;
 
