@@ -16,3 +16,5 @@ def draw():
          height / 2 + amplitude * noise(tempo * incremento))
     # incrementa o tempo a cada frame
     tempo = tempo + 1
+    
+    if tempo >= width: noLoop()

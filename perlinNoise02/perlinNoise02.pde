@@ -15,4 +15,6 @@ void draw() {
   line(tempo, height/2, tempo, height/2 + amplitude * noise(tempo * incremento));
   // incrementa o tempo a cada frame
   tempo = tempo + 1;
+  
+  if (tempo >= width) noLoop(); // para o sketch quando tempo passa a largura da tela
 }
