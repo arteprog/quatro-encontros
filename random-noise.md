@@ -20,17 +20,18 @@ A partir do original em inglês atualizado em: Fri Jul 15 16:36:03 PDT 2005 - Tr
 ```pde 
 
 for(int i=0; i<100; i++) {
-float r = random(50);
-stroke(r*5);
-line(50, i, 50+r, i);
+  float r = random(50);
+  stroke(r*5);
+  line(50, i, 50+r, i);
 }
 
 ----------
 
 for(int i=0; i<100; i++) {
-float r = random(-50, 50);
-stroke(abs(r*5));
-line(50, i, 50+r, i);
+  float r = random(-50, 50);
+  stroke(abs(r*5));
+  line(50, i, 50+r, i);
+}
 ```
 
 **Descrição:** Gera números pseudo-randômicos. Cada vez que a função random() é chamada, ela retorna um valor não esperado em determinado intervalo. Se um valor é passado a função, ela irá retornar um float entre zero e o valor deste parâmetro. A chamada de função  random(5) retorna valores entre 0.0 e 5.0. Se dois parâmetros são passados, ela irá retornar um float com valor entre estes parâmetros. A chamada de função random(-5.0, 10.2)  retorna valores entre -5.0 e 10.2. Para se converter um número randômico de ponto flutuante para inteiro, use a função int().
@@ -57,9 +58,39 @@ noise()
 randomSeed()
 ```
 
+### noise()
 
-Nome | 
-Exemplo | 
+**Nome:** noise()
+
+**Exemplo:**
+```pde
+float xoff = 0.0;
+
+void draw(){
+  background(204);
+  xoff = xoff + .01;
+  float n = noise(xoff) * width;
+  line(n, 0, n, height);
+}
+
+----------
+
+float noiseScale=0.02;
+
+void draw() {
+  background(0);
+  for(int x=0; x<width; x++) {
+    float noiseVal = noise((mouseX+x)*noiseScale,mouseY*noiseScale);
+    stroke(noiseVal*255);
+    line(x, mouseY+noiseVal*80, x, height);
+  }
+}
+```
+
+
+
+
+
 Descrição |
 Sintaxe |
 Parâmetros |
