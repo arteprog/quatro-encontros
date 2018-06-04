@@ -6,7 +6,7 @@ A parte prática das aulas usa Processing <http://processing.org>, uma ferrament
 
 São temas dos encontros:
 
-- **Random Walkers e Perlin Noise**</br>
+- **[Random Walkers e Perlin Noise](quatro-encontros/random-noise.md)**</br>
 Entenda como como na programação a aleatoriedade pode ser uma fonte de movimento e de texturas.
 - **Sistemas de Partículas**</br>
 As ideias de orientação a objetos em programação permitem a criação visual de numerosas partículas.
