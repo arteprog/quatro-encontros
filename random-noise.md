@@ -6,7 +6,7 @@ Os números randômicos que obtemos utilizando a função random() não são rea
 
 A randomicidade é observada em uma seqüência quando a ordem e os padrões parecem estar faltando.
 
-## [Random Walker](Processando-Processing/natureza-do-codigo/introducao.md)
+## [Random Walker](https://github.com/arteprog/Processando-Processing/blob/master/natureza-do-codigo/introducao.md)
 
 ## Referência para Processing
 A partir do original em inglês atualizado em: Fri Jul 15 16:36:03 PDT 2005 - Tradução para o Português do Brasil: Luiz Ernesto Merkle - Atualizada em: 30 de novembro de 2005, 9h00 (BRST) e revista por Monica Rizzolli em maio de 2018.
