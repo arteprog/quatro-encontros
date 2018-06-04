@@ -1,5 +1,11 @@
 # Random Walkers e Perlin Noise
 
+## Números pseudo-randômicos 
+
+Os números randômicos que obtemos utilizando a função random() não são realmente randômicos; portanto são chamados de "pseudo-randômicos". Eles são o resultado de funções matemáticas que simulam randomicidade. A função pode gerar um padrão ao longo do tempo, mas esse período é tão longo para nós que o padrão é imperceptível. Os números pseudo-randômicos funcionam tão bem quanto os randômicos nas aplicações de Processing. 
+
+A randomicidade é observada em uma seqüência quando a ordem e os padrões parecem estar faltando.
+
 **Nome:** random()
 
 **Exemplo:**
