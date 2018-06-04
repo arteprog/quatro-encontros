@@ -23,15 +23,26 @@ line(50, i, 50+r, i);
 
 **Sintaxe:** 
 ```pde 
-noise(x)
-noise(x, y)
-noise(x, y, z)
+random(valor1);
+random(valor1, valor2);
 ```
 
-Parâmetros |
-Retorno |
-Utilização | 
-Relacionado
+**Parâmetros:**
+
+Valor1 - int ou float
+
+Valor2 - int ou float
+
+**Retorno:** float
+
+**Utilização:** Web & Applicações
+
+**Relacionado:** 
+
+noise()
+
+randomSeed()
+
 
 
 Nome | 
