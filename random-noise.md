@@ -8,6 +8,27 @@ A randomicidade é observada em uma seqüência quando a ordem e os padrões par
 
 ## [Random Walker](https://github.com/arteprog/Processando-Processing/blob/master/natureza-do-codigo/introducao.md)
 
+'''pde
+float x, y; // posição x, posição y
+float px, py; // posição x anterior, posição y anterior
+
+void setup() {
+  size(500, 500); // define o tamanho da tela em pixels. Largura X altura
+  x = width/2; // define a posição inicial no eixo x
+  y = height/2; // define a posição inicial no eixo y
+}
+
+void draw() {
+  px = x; // guarda a posição x na variável px
+  py = y; // guarda a posição y na variável py
+  x = x + random(-10, 10);  // atualiza a posição x sorteando um valor
+  y = y + random(-10, 10); // atualiza a posição y sorteando um valor
+  line(px, py, x, y); // desenha uma linha entre os pontos (px, py) e (x, y)
+}
+```
+
+![random1](https://github.com/arteprog/quatro-encontros/blob/master/assets/random1.jpg?raw=true)
+
 ## Referência para Processing
 A partir do original em inglês atualizado em: Fri Jul 15 16:36:03 PDT 2005 - Tradução para o Português do Brasil: Luiz Ernesto Merkle - Atualizada em: 30 de novembro de 2005, 9h00 (BRST) e revista por Monica Rizzolli em maio de 2018.
 
