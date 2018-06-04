@@ -95,8 +95,26 @@ O ruído real pode ser estruturado de modo similar a um sinal de áudio, em resp
 
 Uma outra forma de se ajustar a qualidade da seqüência resultante  é a escala das coordenadas de entrada. Como a função trabalha em um espaço infinito, o valor das coordenadas não importa como tal, mas distância entre coordenadas sucessivas (por exemplo, na utilização de noise() em um laço). Como regra geral, quanto menor a diferença entre coordenadas, mais suave será a seqüência de ruído de Perlin resultante. Passos entre 0.0003 e 0.003 funcionam melhor para a maioria das aplicações, mas pode ser diferente dependendo do uso.
 
-Sintaxe |
-Parâmetros |
-Retorno |
-Utilização | 
-Relacionado
+**Sintaxe:** 
+```pde
+noise(x)
+noise(x, y)
+noise(x, y, z)
+```
+
+**Parâmetros:**
+X float: coordenada x no espaço de ruído de Perlin
+
+Y float: coordenada y no espaço de ruído de Perlin
+
+Z float: coordenada z no espaço de ruído de Perlin
+
+**Retorno:** float
+
+**Utilização:** Web & Applicações
+
+**Relacionado:** 
+```pde
+noiseDetail()
+random()
+```
