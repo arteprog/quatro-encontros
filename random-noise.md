@@ -8,7 +8,8 @@ A randomicidade é observada em uma seqüência quando a ordem e os padrões par
 
 ## [Random Walker](https://github.com/arteprog/Processando-Processing/blob/master/natureza-do-codigo/introducao.md)
 
-'''pde
+```pde
+
 float x, y; // posição x, posição y
 float px, py; // posição x anterior, posição y anterior
 
