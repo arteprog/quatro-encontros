@@ -34,6 +34,8 @@ void draw() {
 
 ## Perlin Noise
 
+>Um algoritmo conhecido como “Ruído de Perlin,” chamado assim em homenagem ao seu criador Ken Perlin, leva esse conceito em consideração. Perlin desenvolveu a função de ruído enquanto trabalhava no filme original Tron, no início dos anos 80. Ela foi elaborada para criar texturas procedurais para efeitos gerados por computador. Em 1997, Perlin ganhou um Oscar de realização técnica com este trabalho. O ruído de Perlin pode ser usado para gerar diversos efeitos com qualidades naturais, como nuvens, paisagens e texturas padronizadas, como por exemplo, o mármore. Referência: [Khan Academy](https://pt.khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-noise/a/perlin-noise)
+
 ### Exemplo 02
 
 ```pde
