@@ -38,11 +38,10 @@ Valor2 - int ou float
 **Utilização:** Web & Applicações
 
 **Relacionado:** 
-
+```pde
 noise()
-
 randomSeed()
-
+```
 
 
 Nome | 
