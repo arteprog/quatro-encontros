@@ -87,11 +87,14 @@ void draw() {
 }
 ```
 
+**Descrição:** Retorna um valor do ruído de Perlin em coordenadas específicas. O ruído de Perlin é um gerador de seqüências randômicas que produz uma sucessão ordenada de modo mais natural de números, se comparada a função padrão random().  Ela foi inventada por Ken Perlin nos anos de 1980, e tem sido utilizada desde então em aplicações gráficas para produzir texturas, movimento natural, formas, terrenos, etc. 
 
+Sua principal diferença da função random() reside no fato de que o ruído de perlin é definido cem um espaço n-dimensional, onde cada par de coordenadas corresponde a um valor fixo-semi-randômico (fixo no tempo de vida de um programa). O valor resultante sempre será entre 0.0 e 1.0. Processing pode computar ruido de Perlin 1D, 2D e 3D, dependendo do número de coordenadas dados. O valor do ruído pode ser animado ao se movimentar pelo espaço de ruído como demonstrado no exemplo acima. A segunda e a terceira dimensão também podem ser interpretadas como tempo. 
 
+O ruído real pode ser estruturado de modo similar a um sinal de áudio, em respeito ao uso que a função faz de freqüências. De modo similar ao conceito de harmônicas em física, o ruído de Perlin é calculado sobre várias oitavas, as quais são somadas para se obter o resultado final. 
 
+Uma outra forma de se ajustar a qualidade da seqüência resultante  é a escala das coordenadas de entrada. Como a função trabalha em um espaço infinito, o valor das coordenadas não importa como tal, mas distância entre coordenadas sucessivas (por exemplo, na utilização de noise() em um laço). Como regra geral, quanto menor a diferença entre coordenadas, mais suave será a seqüência de ruído de Perlin resultante. Passos entre 0.0003 e 0.003 funcionam melhor para a maioria das aplicações, mas pode ser diferente dependendo do uso.
 
-Descrição |
 Sintaxe |
 Parâmetros |
 Retorno |
