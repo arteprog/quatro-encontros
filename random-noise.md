@@ -88,6 +88,27 @@ void draw() {
 }
 ```
 
+### Exemplo 04 Random X Noise
+
+```pde
+float tempo = 0; // declarando a variável global tempo e inicializando com 0
+
+void setup() {
+  size(500, 500); // define o tamanho da tela em pixels. Largura X Altura
+}
+
+void draw() {
+  // desenha uma linha do topo da tela até um número sorteado entre 0 e Altura/2
+  // números sorteados pela função random
+  line(tempo * 10, 0, tempo * 10, height/2 * random(1));
+  // desenha uma linha do meio da tela até um número sorteado entre Altura/2 e Altura
+  // números sorteados pela função noise
+  line(tempo * 10, height/2, tempo * 10, height/2 + height/2 * noise(tempo));
+  // incrementa o tempo a cada frame
+  tempo += 0.1;
+}
+```
+
 ## Referência para Processing
 A partir do original em inglês atualizado em: Fri Jul 15 16:36:03 PDT 2005 - Tradução para o Português do Brasil: Luiz Ernesto Merkle - Atualizada em: 30 de novembro de 2005, 9h00 (BRST) e revista por Monica Rizzolli em maio de 2018.
 
