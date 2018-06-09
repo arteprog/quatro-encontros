@@ -22,7 +22,7 @@ class Population {
     matingPool = new ArrayList<Organism>();
     generations = 0;
     for (int i = 0; i < population.length; i++) {
-      population[i] = new Organism(new DNA(), 50+i*75, 60);
+      population[i] = new Organism(new DNA(), 50+i*88.5, 60);
     }
   }
 
@@ -79,7 +79,7 @@ class Population {
       // Mutate their genes
       child.mutate(mutationRate);
       // Fill the new population with the new child
-      population[i] = new Organism(child, 50+i*75, 60);
+      population[i] = new Organism(child, 50+i*88.5, 60);
     }
     generations++;
   }

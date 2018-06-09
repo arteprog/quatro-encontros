@@ -8,10 +8,10 @@
 Population population;
 
 void setup() {
-  size(800, 300);
-  colorMode(RGB, 1.0);
+  size(900, 300);
+  colorMode(HSB, 1.0);
   int popmax = 10;
-  float mutationRate = 0.05;  // A pretty high mutation rate here, our population is rather small we need to enforce variety
+  float mutationRate = 0.01;  // A pretty high mutation rate here, our population is rather small we need to enforce variety
   // Create a population with a target phrase, mutation rate, and population max
   population = new Population(mutationRate, popmax);
 }

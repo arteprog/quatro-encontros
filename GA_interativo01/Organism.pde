@@ -12,7 +12,7 @@ class Organism {
   DNA dna;          // organism's DNA
   float fitness;    // How good is this organism?
   float x, y;       // Position on screen
-  int wh = 70;      // Size of square enclosing organism
+  int wh = 80;      // Size of square enclosing organism
   boolean mouseIsOver; // Are we rolling over this organism?
   float a, b, c;
 
