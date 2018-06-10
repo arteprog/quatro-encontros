@@ -8,7 +8,7 @@
 Population population;
 
 void setup() {
-  size(1080, 1080);
+  size(750, 750);
   colorMode(HSB, 1.0);
   int popmax = 25;
   float mutationRate = 0.01;  // A pretty high mutation rate here, our population is rather small we need to enforce variety
@@ -24,7 +24,7 @@ void draw() {
   // Display some text
   textAlign(LEFT);
   fill(1);
-  //text("[pressione 'e' para a calcular a próxima geração] Geração #:" + population.getGenerations(), 25, 20);
+  text("[pressione 'e' para a calcular a próxima geração] Geração #:" + population.getGenerations(), 25, 20);
 }
 
 // If 'e' is presses, evolve next generation
@@ -33,6 +33,6 @@ void keyPressed() {
     randomSeed(frameCount);
     population.selection();
     population.reproduction();
-    saveFrame(population.getGenerations()+"GA.png");
+    //saveFrame(population.getGenerations()+"GA.png");
   }
 }

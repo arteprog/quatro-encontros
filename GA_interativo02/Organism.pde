@@ -14,7 +14,7 @@ class Organism {
   float x, y;       // Position on screen
   int wh = 110;      // Size of square enclosing organism
   boolean mouseIsOver; // Are we rolling over this organism?
-  float a, b, c;
+  float a, ra, rl;
 
   // Create a new organism
   Organism(DNA dna_, float x_, float y_) {
@@ -29,17 +29,15 @@ class Organism {
     // We are using the organism's DNA to pick properties for this organism
     // such as: head size, color, eye position, etc.
     // Now, since every gene is a floating point between 0 and 1, we map the values
-    a   = map(dna.genes[20], 0, 1, 0, HALF_PI);
-    //color c          = color(dna.genes[1], dna.genes[2], dna.genes[3]);
-    
-    c   = map(dna.genes[5], 0, 1, -2, 2);
-    int d   = int(map(dna.genes[0], 0, 1, 2, 10));
+    int d   = int(map(dna.genes[0], 0, 1, 3, 9)); // degree, number of gens
+    a   = map(dna.genes[1], 0, 1, 0, HALF_PI);  // angle    
+    ra   = map(dna.genes[2], 0, 1, -2, 2);      // angle randomizer
 
     // Once we calculate all the above properties, we use those variables to draw rects, ellipses, etc.
     pushMatrix();
     translate(x, y);
     randomSeed(int(x + y));
-    branch(d, a, wh/10 + (wh/75)*b);
+    branch(d, a, wh/9);
     // Draw the bounding box
     pushStyle();
     if (mouseIsOver) fill(0, 0.25);
@@ -53,7 +51,7 @@ class Organism {
     // Display fitness value
     textAlign(CENTER);
     fill(1);
-    text(int(fitness), x, y+70);
+    text(fitness, x, y+70);
   }
 
   float getFitness() {
@@ -81,12 +79,12 @@ class Organism {
     pushStyle();
     //strokeWeight(gen);
     // All recursive functions must have an exit condition!!!!
-    if (gen > 1) { // and branch_size > 1:
+    if (gen > 0) { // and branch_size > 1:
       pushMatrix();
-      stroke(map(gen,0,6,0,1), 1, 1);
-      b   = map(dna.genes[10+gen], 0, 1, 0, 10);
-      float h = branch_size  * (1 - random(b/3, b) / 15);
-      rotate(theta + c * random(1)); // Rotate by theta
+      stroke(map(gen,0,9,0,1), 1, 1);
+      rl = map(dna.genes[3+gen], 0, 1, 0, 10);
+      float h = branch_size  * (1 - random(rl/3, rl) / 15);
+      rotate(theta + ra * random(1)); // Rotate by theta
       line(0, 0, 0, -h);  // Draw the branch
       translate(0, -h);  // Move to the end of the branch
       // Ok, now call myself to draw two branches!!
@@ -95,8 +93,8 @@ class Organism {
       popStyle();
       popMatrix();
       pushMatrix();
-      h = branch_size  * (1 - random(b/3, b) / 15);
-      rotate(-theta + c * random(1));
+      h = branch_size  * (1 - random(rl/3, rl) / 15);
+      rotate(-theta + ra * random(1));
       line(0, 0, 0, -h);
       translate(0, -h);
       pushStyle();
