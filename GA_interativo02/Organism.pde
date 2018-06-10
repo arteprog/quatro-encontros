@@ -29,11 +29,11 @@ class Organism {
     // We are using the organism's DNA to pick properties for this organism
     // such as: head size, color, eye position, etc.
     // Now, since every gene is a floating point between 0 and 1, we map the values
-    a   = map(dna.genes[0], 0, 1, 0, HALF_PI);
+    a   = map(dna.genes[20], 0, 1, 0, HALF_PI);
     //color c          = color(dna.genes[1], dna.genes[2], dna.genes[3]);
-    b   = map(dna.genes[4], 0, 1, 0, 10);
+    
     c   = map(dna.genes[5], 0, 1, -2, 2);
-    int d   = int(map(dna.genes[6], 0, 1, 2, 10));
+    int d   = int(map(dna.genes[0], 0, 1, 2, 10));
 
     // Once we calculate all the above properties, we use those variables to draw rects, ellipses, etc.
     pushMatrix();
@@ -84,6 +84,7 @@ class Organism {
     if (gen > 1) { // and branch_size > 1:
       pushMatrix();
       stroke(map(gen,0,6,0,1), 1, 1);
+      b   = map(dna.genes[10+gen], 0, 1, 0, 10);
       float h = branch_size  * (1 - random(b/3, b) / 15);
       rotate(theta + c * random(1)); // Rotate by theta
       line(0, 0, 0, -h);  // Draw the branch
