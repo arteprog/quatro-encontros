@@ -1,3 +1,18 @@
+# Autômatos Celulares
+
+## Introdução
+
+Um autômato celular é um sistema de células com as seguintes características:
+
+1 - As células vivem em uma grade.
+2 - Cada célula tem um estado. O número de possibilidades do estado é tipicamente finito. O exemplo mais simples tem duas possibilidades: 1 e 0 (referidos como "ligado" e "desligado" ou "vivo" e "morto" ou "on" e "off").
+3 - Cada célula tem um vizinho. Isto pode ser definido de várias maneiras, mas normalmente é definido através de uma lista das células adjacentes.
+
+![grade](https://github.com/arteprog/quatro-encontros/blob/master/assets/grade.png?raw=true)
+Uma grade de células ligadas e desligadas. A "vizinhança" célula vermelha é composta pelas células amarelas.
+
+### Exemplo 01
+
 ```pde
 // Adaptado de
 // The Nature of Code, Daniel Shiffman http://natureofcode.com
