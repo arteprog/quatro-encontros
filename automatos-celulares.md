@@ -12,7 +12,7 @@ Um autômato celular é um sistema de células com as seguintes características
 
 ![grade](https://github.com/arteprog/quatro-encontros/blob/master/assets/grade.png?raw=true)
 
-Uma grade de células ligadas e desligadas. A "vizinhança" célula vermelha é composta pelas células amarelas.
+Uma grade de células ligadas e desligadas. A "vizinhança" da célula vermelha é composta pelas células amarelas.
 
 ### Exemplo 01
 
