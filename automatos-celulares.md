@@ -2,22 +2,22 @@
 
 ## Introdução
 
+O desenvolvimento de sistemas de autômatos celulares é normalmente atribuído a Stanisław Ulam e John von Neumann, que eram ambos pesquisadores do laboratório nacional de Los Alamos no Novo México na década de 1940. Ulam estudava o crescimento de cristais e von Neumann imaginava um mundo de robôs auto-replicante. O trabalho de von Neumann em auto-replicação e Autômatos Celulares é conceitualmente semelhante ao que é provavelmente o mais famoso autômato celular: o "jogo da vida", de Conway (Conway's Game of Life). Provavelmente o trabalho científico mais significativo estudando autômatos celulares chegou em 2002: o livro [A New Kind of Science](http://www.wolframscience.com/nksonline/toc.html) de Stephen Wolfram.
+
 Um autômato celular é um sistema de células com as seguintes características:
 
 1. As células vivem em uma grade.
 
 2. Cada célula tem um estado. O número de possibilidades do estado é tipicamente finito. O exemplo mais simples tem duas possibilidades: 1 e 0 (referidos como "ligado" e "desligado" ou "vivo" e "morto" ou "on" e "off").
 
-3. Cada célula tem um vizinho. Isto pode ser definido de várias maneiras, mas normalmente é definido através de uma lista das células adjacentes.
+3. Cada célula tem vizinhos. Isto pode ser definido de várias maneiras, mas normalmente é definido através de uma lista das células adjacentes.
 
 ![grade](https://github.com/arteprog/quatro-encontros/blob/master/assets/grade.png?raw=true)
 
 > Uma grade de células ligadas e desligadas. A "vizinhança" da célula vermelha é composta pelas células amarelas.
 
-O desenvolvimento de sistemas de autômatos celulares é normalmente atribuído a Stanisław Ulam e John von Neumann, que eram ambos pesquisadores do laboratório nacional de Los Alamos no Novo México na década de 1940. Ulam estudava o crescimento de cristais e von Neumann imaginava um mundo de robôs auto-replicante. O trabalho de von Neumann em auto-replicação e Autômatos Celulares é conceitualmente semelhante ao que é provavelmente o mais famoso autômato celular: o "jogo da vida", de Conway (Conway's Game of Life). Provavelmente o trabalho científico mais significativo estudando autômatos celulares chegou em 2002: o livro [A New Kind of Science](http://www.wolframscience.com/nksonline/toc.html) de Stephen Wolfram.
 
 ## Conway's Game of Life
-
 
 O jogo da vida de Conway foi popularizado por Martin Gardner em sua coluna na revista Scientific American em 1970. Como poucas pessoas tinham acesso a computadores, Gardner no artigo sugere calcular os estados do autômato usando um tabuleiro quadriculado e fichas da seguinte maneira:
 > Para experimentar o jogo você deve ter um tabuleiro razoavelmente grande e um suprimento abundante de fixas de duas cores. É possível trabalhar com lápis e papel quadriculado mas é muito mais fácil, especialmente para iniciantes, usar fichas em um tabuleiro.
