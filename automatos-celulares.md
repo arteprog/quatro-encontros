@@ -16,6 +16,14 @@ Um autômato celular é um sistema de células com as seguintes características
 
 > Uma grade de células ligadas e desligadas. A "vizinhança" da célula vermelha é composta pelas células amarelas.
 
+Um detalhe importante do funcionamento dos autômatos celulares é o tempo. Não estamos falando do tempo real, mas sim sobre como o Autômato Celular vive durante um período de tempo, o que também poderia ser chamado de uma geração e, no nosso caso, irá provavelmente se referir a contagem de quadros de uma animação (frameCount). Devemos nos perguntar como calculamos os estados de todas as células de uma geração e como os estados de todas as células transformam-se de uma geração para a outra.
+
+Um novo estado da célula é uma função de todos os estados na vizinhança da célula no momento anterior no tempo (ou durante a geração anterior). Podemos calcular um valor de estado olhando para todos os estados anteriores dos vizinhos.
+No mundo dos autômatos celulares, há muitas maneiras para calcular o estado de uma célula a partir de um grupo de células, vários sistemas de regras são possíveis, como por exemplo com múltiplas camadas de vizinhança.
+
+### Sistemas complexos
+
+Sistemas complexos, como os autômatos celulares, possuem algumas características básicas: o todo é maior do que a soma das suas partes, o sistema complexo é formado por elementos operando em paralelo, com relações de curto alcance e, como um todo, apresenta comportamento emergente.
 
 ## Conway's Game of Life
 
