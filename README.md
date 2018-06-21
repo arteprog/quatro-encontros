@@ -10,7 +10,7 @@ São temas dos encontros:
 Entenda como como na programação a aleatoriedade pode ser uma fonte de movimento e de texturas.
 - **Sistemas de Partículas**</br>
 As ideias de orientação a objetos em programação permitem a criação visual de numerosas partículas.
-- **[Autômatos Celulares]**</br>(/automatos-celulares.md)
+- **[Autômatos Celulares](/automatos-celulares.md)**</br>
 Uma simulação com regras bastante simples, os autômatos celulares geram ricos padrões visuais, como o famoso Jogo da vida de Conway.
 - **Algoritmos Genéticos**</br>
 Simulando a replicação e seleção que ocorrem na biologia, os algoritmos genéticos podem ser usados tanto na engenharia como na arte computacional. 
