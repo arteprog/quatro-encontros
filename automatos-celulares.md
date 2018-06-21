@@ -12,7 +12,7 @@ Um autômato celular é um sistema de células com as seguintes características
 
 ![grade](https://github.com/arteprog/quatro-encontros/blob/master/assets/grade.png?raw=true)
 
-Uma grade de células ligadas e desligadas. A "vizinhança" da célula vermelha é composta pelas células amarelas.
+< Uma grade de células ligadas e desligadas. A "vizinhança" da célula vermelha é composta pelas células amarelas.
 
 O desenvolvimento de sistemas de autômatos celulares é normalmente atribuído a Stanisław Ulam e John von Neumann, que eram ambos pesquisadores do laboratório nacional de Los Alamos no Novo México na década de 1940. Ulam estudava o crescimento de cristais e von Neumann imaginava um mundo de robôs auto-replicante. O trabalho de von Neumann em auto-replicação e Autômatos Celulares é conceitualmente semelhante ao que é provavelmente o mais famoso autômato celular: o "jogo da vida", de Conway (Conway's Game of Life).
 
