@@ -20,9 +20,7 @@ class Population {
     population = new Organism[num];
     matingPool = new ArrayList<Organism>();
     generations = 0;
-    //for (int i = 0; i < population.length; i++) {
-    //  population[i] = new Organism(new DNA(), 50+i*88.5, 60);
-    //}
+
     float s = width/5.2;
     int i = 0;
     for (int x = 0; x < 5; x++) {
@@ -33,21 +31,21 @@ class Population {
     }
   }
 
-  // Display all faces
+  // Mostra todos os organismos
   void display() {
     for (int i = 0; i < population.length; i++) {
       population[i].display();
     }
   }
 
-  // Are we rolling over any of the faces?
+  // Veja se o mouse está sobre o organismo
   void rollover(int mx, int my) {
     for (int i = 0; i < population.length; i++) {
       population[i].checkMouseOver(mx, my);
     }
   }
 
-  // Generate a mating pool
+  // Gerar o "mating pool"
   void selection() {
     // Clear the ArrayList
     matingPool.clear();
@@ -95,7 +93,7 @@ class Population {
     return generations;
   }
 
-  // Find highest fintess for the population
+  // Encontra o maior valor de fitness na população
   float getMaxFitness() {
     float record = 0;
     for (int i = 0; i < population.length; i++) {

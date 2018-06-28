@@ -7,11 +7,11 @@
 
 class DNA {
 
-  // The genetic sequence
+  // A sequência de números que representam os genes
   float[] genes;
-  int len = 16;  // Arbitrary length
+  int len = 16;  // O comprimento é arbitrário
   
-  //Constructor (makes a random DNA)
+  //Construtor (cria um DNA aleatório)
   DNA() {
     // DNA is random floating point values between 0 and 1 (!!)
     genes = new float[len];
@@ -26,7 +26,7 @@ class DNA {
   
 
   // Crossover
-  // Creates new DNA sequence from two (this & 
+  // Cria uma nova sequencia de DNA a partir de duas 
   DNA crossover(DNA partner) {
     float[] child = new float[genes.length];
     int crossover = int(random(genes.length));
@@ -38,7 +38,7 @@ class DNA {
     return newgenes;
   }
   
-  // Based on a mutation probability, picks a new random character in array spots
+  // Sorteia um valor de caordo com a probabilidade de mutação.
   void mutate(float m) {
     for (int i = 0; i < genes.length; i++) {
       if (random(1) < m) {
