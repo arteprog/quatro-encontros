@@ -19,9 +19,13 @@ LOOP:
 Etapa 2: Seleção. Avalia a adequação de cada elemento da população e cria um pool genético.
 
 Etapa 3: Reprodução. Repete N vezes:
+
            a) Escolhe dois progenitores com probabilidade de acordo com a aptidão relativa.
+           
            b) Cruzamento — cria um descendente, combinando o DNA desses dois progenitores.
+           
            c) Mutação — muta o DNA do descendente, com base em determinada probabilidade.
+           
            d) Adiciona o organismo descendente a uma nova população.
 
 Etapa 4. Substituir a população velha com a nova população e retornar para a etapa 2.
