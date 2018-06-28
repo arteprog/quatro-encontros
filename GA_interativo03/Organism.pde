@@ -39,28 +39,28 @@ class Organism {
     float mouthw     = map(dna.genes[5], 0, 1, 0, 50);
     float mouthh     = map(dna.genes[5], 0, 1, 0, 10);
 
-    // Once we calculate all the above properties, we use those variables to draw rects, ellipses, etc.
+    // Calculadas as propriedades, vamos usar essas variáveis para desenhar.
     pushMatrix();
     translate(x, y);
     noStroke();
 
-    // Draw the head
+    // Cabeça
     fill(c);
     ellipseMode(CENTER);
     ellipse(0, 0, r, r);
 
-    // Draw the eyes
+    // Olhos
     fill(eyecolor);
     rectMode(CENTER);
     rect(-eye_x, -eye_y, eye_size, eye_size);
     rect( eye_x, -eye_y, eye_size, eye_size);
 
-    // Draw the mouth
+    // Boca
     fill(mouthColor);
     rectMode(CENTER);
     rect(mouth_x, mouth_y, mouthw, mouthh);
 
-    // Draw the bounding box
+    // Retângulo de contorno
     stroke(0.25);
     if (mouseIsOver) fill(0, 0.25);
     else noFill();
@@ -68,7 +68,7 @@ class Organism {
     rect(0, 0, wh, wh);
     popMatrix();
 
-    // Display fitness value
+    // Texto com o valor de fitness/aptidão
     textAlign(CENTER);
     fill(0);
     text(int(fitness), x, y+70);

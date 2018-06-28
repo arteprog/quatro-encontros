@@ -5,17 +5,16 @@
 // Interactive Selection
 // http://www.genarts.com/karl/papers/siggraph91.html
 
-// A class to describe a population of faces
-// this hasn't changed very much from example to example
+// Classe para descrever uma população de organismos
 
 class Population {
 
-  float mutationRate;           // Mutation rate
-  Organism[] population;            // array to hold the current population
-  ArrayList<Organism> matingPool;   // ArrayList which we will use for our "mating pool"
-  int generations;              // Number of generations
+  float mutationRate;           // Taxa de mutação
+  Organism[] population;        // array da população atual de organismos
+  ArrayList<Organism> matingPool;   // ArrayList do "mating pool"
+  int generations;              // Número de gerações
 
-  // Create the population
+  //  Novo população
   Population(float m, int num) {
     mutationRate = m;
     population = new Organism[num];
