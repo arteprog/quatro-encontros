@@ -9,7 +9,7 @@ São temas dos encontros:
 - **[Random Walkers e Perlin Noise](/random-noise.md)**</br>
 Entenda como como na programação a aleatoriedade pode ser uma fonte de movimento e de texturas.
 - **Sistemas de Partículas**</br>
-As ideias de orientação a objetos em programação permitem a criação visual de numerosas partículas.
+As ideias de [orientação a objetos](https://github.com/arteprog/programacao-criativa/blob/master/conteudo/orientacao-a-objetos.md) em programação permitem a criação visual de numerosas partículas.
 - **[Autômatos Celulares](/automatos-celulares.md)**</br>
 Uma simulação com regras bastante simples, os autômatos celulares geram ricos padrões visuais, como o famoso Jogo da vida de Conway.
 - **[Algoritmos Genéticos](/algoritmo-genetico.md)**</br>
